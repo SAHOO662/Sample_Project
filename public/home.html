@@ -5,163 +5,268 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-            /* align-items: center; */
-            text-align: center;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        h1 {
-            background-color: yellowgreen;
-            color: #fff;
-            width: 50%;
-            height: 400px;
-            padding-top: 200px;
-            text-align: center;
-        }
-    </style>
+    <link rel="icon" typw="icon" href="public/favicon.ico">
+    <title>I-Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
 
 <body>
-    <h1>left</h1>
-    <h1>Home file</h1>
-    <h1>right</h1>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="/">I-Shop.</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="catalog.html">Catalog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Pages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Blog</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav flex-row">
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="offcanvas" href="#modalSearch">
+                                <i class="bi bi-search"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item ms-lg-n4">
+                            <a class="nav-link" href="#">
+                                <i class="bi bi-person"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item ms-lg-n4">
+                            <a class="nav-link" href="#">
+                                <i class="bi bi-heart"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item ms-lg-n4">
+                            <a class="nav-link" data-bs-toggle="offcanvas" href="#">
+                                <span data-cart-items="2">
+                                    <i class="bi bi-cart4"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-    <article>
-        <h1>
-            <span class="bi bi-heart-fill article-icon"></span> IRONMAN IS MY FAVORITE HERO
-            <span class="bi bi-heart-fill article-icon"></span>
-        </h1>
-    </article>
-    <section class="main sec1">
-        <div class="ironman">
-            <h1>IRONMAN</h1>
-            <button>See Movies <span class="bi bi-arrow-right"></span></button>
-        </div>
-        <div class="thor">
-            <h1>THOR</h1>
-            <button>See Movies <span class="bi bi-arrow-right"></span></button>
-        </div>
-        <div class="spiderman">
-            <h1>SPIDERMAN</h1>
-            <button>See Movies <span class="bi bi-arrow-right"></span></button>
-        </div>
-    </section>
-    <section class="sec2">
-        <div class="container1">
-            <div class="col">
-                <h3><span class="bi bi-tv container1-icon"></span>SEE ON TV</h3>
-                <p>From all movies over $100</p>
+    </header>
+
+    <section class="mt-2">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="image/BEAUTYFUL EYE.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="image/HATT PIC.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="image/FACE PIC.jpg" class="d-block w-100" alt="...">
+                </div>
             </div>
-            <div class="col">
-                <h3><span class="bi bi-phone container1-icon"></span>SEE ON MOBILE</h3>
-                <p>From all movies over $200</p>
-            </div>
-            <div class="col">
-                <h3><span class="bi bi-youtube container1-icon"></span>FREE ON YOUTUBE</h3>
-                <p>Only low quality movies</p>
-            </div>
-            <div class="col">
-                <h3><span class="bi bi-tag container1-icon"></span>OVER 1000 TYPES</h3>
-                <p>We have everything you need</p>
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </section>
-    <section class="sec3">
+    <section>
+        <div class="container mt-2">
+            <h2>Wellcome to I-Shop items</h2>
+            <div class="row pt-4">
+                <div class="col-sm-12 col-md-4 col-lg-3 pb-3">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="....">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example ..........</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3 pb-3">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="....">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example ..........</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3 pb-3">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="....">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example ..........</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3 pb-3">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="....">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example ..........</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3 pb-3">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="....">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example ..........</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3 pb-3">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="....">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example ..........</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3 pb-3">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="....">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example ..........</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3 pb-3">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="....">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example ..........</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3 pb-3">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="....">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example ..........</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3 pb-3">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="....">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example ..........</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-success">
         <div class="container">
-            <div class="cont-col1">
-                <h5>NEW COLLECTION</h5>
-                <h1>Best Movies 2022</h1>
-                <p>Appear, dry there darkness they're seas, dry waters thing fly midst.
-                    Beast, above fly brought Very green.</p>
-            </div>
-            <div class="cont-col2">
-                <div class="cont-row1">
-                    <div class="cont-col3 ci">
-                        <h1 class="c-3-6-h1">Ironman Movies</h1>
-                        <button class="btn-sec3" style="background-color: transparent; color: white;">Bye Now <span
-                                class="bi bi-arrow-right"></span></button>
-                    </div>
-                    <div class="cont-col4">
-                        <h1 class="c-4-5-h1">Thor Movies</h1>
-                        <button class="btn-sec3" style="background-color: transparent; color: white;">Bye Now <span
-                                class="bi bi-arrow-right"></span></button>
-                    </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <h2>Adventure.</h2>
+                    <ul class="list-unstyled">
+                        <li class="bi bi-facebook footer-icon"></li>
+                        <li class="bi bi-youtube footer-icon"></li>
+                        <li class="bi bi-twitter footer-icon"></li>
+                        <li class="bi bi-instagram footer-icon"></li>
+                        <li class="bi bi-medium footer-icon"></li>
+                    </ul>
                 </div>
-                <div class="cont-row1">
-                    <div class="cont-col5">
-                        <h1 class="c-4-5-h1">Spyderman Movies</h1>
-                        <button class="btn-sec3" style="background-color: transparent; color: white;">Bye Now <span
-                                class="bi bi-arrow-right"></span></button>
-                    </div>
-                    <div class="cont-col6 ci">
-                        <h1 class="c-3-6-h1">Adventure Movies</h1>
-                        <button class="btn-sec3" style="background-color: transparent; color: white;">Bye Now <span
-                                class="bi bi-arrow-right"></span></button>
+                <div class="col-sm-12 col-md-2 col-lg-2">
+                    <h4>SUPPORT</h4>
+                    <ul class="list-unstyled">
+                        <li>Contact Us</li>
+                        <li>FAQs</li>
+                        <li>Size Guide</li>
+                        <li>Shipping & Returns</li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-2 col-lg-2">
+                    <h4>SHOP</h4>
+                    <ul class="list-unstyled">
+                        <li>Men's Shopping</li>
+                        <li>Women's Shopping</li>
+                        <li>Kids' Shopping</li>
+                        <li>Discounts</li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-2 col-lg-2">
+                    <h4>COMPANY</h4>
+                    <ul class="list-unstyled">
+                        <li>Our Story</li>
+                        <li>Careers</li>
+                        <li>Terms & Conditions</li>
+                        <li>Privacy & Cookie policy</li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-2 col-lg-2">
+                    <h4>CONTACT</h4>
+                    <ul class="list-unstyled">
+                        <li>1234567809</li>
+                        <li>saffasf@gmail.com</li>
+                        <li>help@adv.com</li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p>&copy; copyright 2022</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="sec4"></section>
-    <section class="sec5"></section>
-    <section class="sec6"></section>
-    <section class="sec7"></section>
-    <footer>
-        <div class="footer-row">
-            <div class="footer-col footer-left-col">
-                <h2>Adventure.</h2>
-                <ul>
-                    <li class="bi bi-facebook footer-icon"></li>
-                    <li class="bi bi-youtube footer-icon"></li>
-                    <li class="bi bi-twitter footer-icon"></li>
-                    <li class="bi bi-instagram footer-icon"></li>
-                    <li class="bi bi-medium footer-icon"></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>SUPPORT</h4>
-                <ul>
-                    <li>Contact Us</li>
-                    <li>FAQs</li>
-                    <li>Size Guide</li>
-                    <li>Shipping & Returns</li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>SHOP</h4>
-                <ul>
-                    <li>Men's Shopping</li>
-                    <li>Women's Shopping</li>
-                    <li>Kids' Shopping</li>
-                    <li>Discounts</li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>COMPANY</h4>
-                <ul>
-                    <li>Our Story</li>
-                    <li>Careers</li>
-                    <li>Terms & Conditions</li>
-                    <li>Privacy & Cookie policy</li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>CONTACT</h4>
-                <ul>
-                    <li>1234567809</li>
-                    <li>saffasf@gmail.com</li>
-                    <li>help@adv.com</li>
-                </ul>
-            </div>
-            <div class="copy">
-                <p>&copy; copyright 2022</p>
-            </div>
-        </div>
+
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
